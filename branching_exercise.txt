@@ -1,0 +1,8 @@
+1. git branch "branch name"
+2. A fast-forward merge in Git is a simple merge that moves the branch pointer forward,
+while a recursive merge uses the merge algorithm to combine the changes from the two branches.
+3. git checkout "branch name"
+4. git branch -d "branch name"
+5. Merge conflicts happen when the same lines in a file have been modified in different ways on two branches 
+that are being merged. Git is unable to automatically resolve the conflict and requires the user to manually 
+resolve the conflict by deciding which changes to keep and which to discard.
