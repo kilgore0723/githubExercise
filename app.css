@@ -1,0 +1,59 @@
+#game div {
+    border: 1px solid black;
+    width: 15%;
+    height: 200px;
+    margin: 10px;
+    display: inline-block;
+  }
+  
+  .red.flipped {
+    transform: rotateY(180deg);
+    transition: transform 0.8s;
+    background-color: red;
+  }
+  .blue.flipped {
+    transform: rotateY(180deg);
+    transition: transform 0.8s;
+    background-color: blue;
+  }
+  .green.flipped {
+    transform: rotateY(180deg);
+    transition: transform 0.8s;
+    background-color: green;
+  }
+  .orange.flipped {
+    transform: rotateY(180deg);
+    transition: transform 0.8s;
+    background-color: orange;
+    background-color: none;
+  }
+  .purple.flipped {
+    transform: rotateY(180deg);
+    transition: transform 0.8s;
+    background-color: purple;
+  }
+  .red.flipped {
+    transform: rotateY(180deg);
+    transition: transform 0.8s;
+    background-color: red;
+  }
+  .blue.flipped {
+    transform: rotateY(180deg);
+    transition: transform 0.8s;
+    background-color: blue;
+  }
+  .green.flipped {
+    transform: rotateY(180deg);
+    transition: transform 0.8s;
+    background-color: green;
+  }
+  .orange.flipped {
+    transform: rotateY(180deg);
+    transition: transform 0.8s;
+    background-color: orange;
+  }
+  .purple.flipped {
+    transform: rotateY(180deg);
+    transition: transform 0.8s;
+    background-color: purple;
+  }  
