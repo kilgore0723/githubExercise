@@ -103,15 +103,15 @@ function search(str) {
 }
 
 function searchHandler(e) {
-  // Call the search() function with the input value and get the matching results
+  /* Calls the search() function on the user's input value and get the 
+  matching results*/
   const inputVal = e.target.value;
   const results = search(inputVal);
-
-  // Show the matching results in the suggestions list
-  showSuggestions(results, inputVal);
+  // Creates list element of matching results
+  showSuggestions(results);
 }
 
-function showSuggestions(results, inputVal) {
+function showSuggestions(results) {
   // Clear the previous suggestions from the list
   suggestions.innerHTML = "";
   // Creates a list for the matching results
@@ -120,18 +120,20 @@ function showSuggestions(results, inputVal) {
     li.innerHTML = result;
     suggestions.append(li);
   });
-  /* Need to talk about this with my mentor, 
-  i can't seem to remove it and make the app running */
-  // suggestions.style.display = "block";
+  /* This make sure that display is set to block not none
+  due to the event listener i created on search container */
+  suggestions.style.display = "block";
 }
 
 function useSuggestion(e) {
-  // Set the input value to the selected suggestion
+  // Sets the input value using the targeted li element text
   if (e.target.tagName.toLowerCase() === "li") {
     input.value = e.target.textContent;
   }
 }
 
+/* Hover function that changes the background color of
+a target list */
 function hover(event) {
   const lists = event.target;
   if (event.type === "mouseover") {
@@ -141,11 +143,21 @@ function hover(event) {
   }
 }
 
+/* Executes an event when a user provides an input on the textbox and calls
+the function searchHandler() */
 input.addEventListener("input", searchHandler);
+
+/* Executes the click event and calls the function 
+useSuggestion() to put the 'clicked' list on the input box. */
 suggestions.addEventListener("click", useSuggestion);
+
+/* Calls the function hover() when going through the
+suggestion list. */
 suggestions.addEventListener("mouseover", hover);
 suggestions.addEventListener("mouseout", hover);
 
+/* This event handles the display when i click outside of
+search container removing the suggestion list */
 document.addEventListener("click", (event) => {
   if (!event.target.matches(".search-container")) {
     suggestions.style.display = "none";

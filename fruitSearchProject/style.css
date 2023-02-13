@@ -1,19 +1,21 @@
 .suggestions {
-  /* Set the height of suggestion list in relation to the number of list*/
+  /* Set the height of suggestion list in relation to the number of list. */
   max-height: 200px;
   overflow-y: auto;
+  /* Fixed the position so it wont be bump up by the suggestion list. */
   position: fixed;
+  /* Aligned the suggestion list to the input list. */
   width: 290px;
 }
 
 .suggestions ul {
   /* Make sure that the list starts on another line not horizontally*/
-  /* Will only work if i put !important on it, idk why*/
-  display: block !important;
+  display: block;
 }
 
 .suggestions li {
-  /* Sets the font of list to black with a bit of padding*/
+  /* Sets the font of list to black with a bit of padding
+  and a background color */
   color: black;
   padding: 10px;
   background-color: whitesmoke;
@@ -27,10 +29,14 @@ ul {
 }
 
 body {
+  /* Make the body responsive to different screen sizes and 
+  make sure the contents are always centered. */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  /* Sets the background image to center and make sure it does 
+  not repeat and contains the whole image. */
   background-image: url("./fruit\ Bg.jpg");
   background-size: cover;
   background-position: center;
@@ -38,19 +44,24 @@ body {
 }
 
 h1 {
+  /* Removes the default margin and padding of the font style*/
   margin: 0;
   padding: 0;
   font-size: 100px;
   font-family: "Sassy Frass", cursive;
   color: #b7ec07;
+  /* Designed the font with embossed-like feature */
   text-shadow: 
     /* Add a white shadow to the top-left of the text */ 
     -2px -1px 0 #fff,
     /* Add a dark shadow to the bottom-right of the text */ 
     2px 2px 0 #333;
+  /* Added a bit of space between the input box */
   margin-bottom: 5px;
 }
 
+/* Aligned the input box to the font length and 
+  make rounded edges. */
 input[type="text"] {
   width: 280px;
   border-radius: 5px;
