@@ -1,0 +1,118 @@
+/* game board table */
+body,
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(./c4bg.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow: hidden;
+}
+
+label {
+  background-color: rgb(94, 37, 216);
+  color: greenyellow;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  border: 1px solid rgb(94, 37, 216);
+  border-radius: 3px;
+  padding: 2px;
+  margin: 2px;
+}
+
+#board {
+  border: solid 1px #666;
+  border-radius: 5px;
+  background-color: #eeeeee5f;
+  margin: auto;
+  height: 100%;
+}
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+  /* height: 100%; */
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  animation: popping 1s ease-in-out 1;
+  transform-origin: center center;
+}
+
+@keyframes popping {
+  0% {
+    transform: scale(0.1);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  80% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Win message */
+#win-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
+
+/* create a flipping animation for the currentPlayer id */
+#current-player {
+  animation: pulse 3s ease-in-out infinite;
+  background-image: url(./c4banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: inset 1px 2px 1px rgba(255, 255, 255, 0.4),
+    inset 0px -2px 0px rgba(0, 0, 0, 0.3);
+  width: 250px;
+  position: relative;
+  left: 150px;
+  border-radius: 5px;
+  text-shadow: -1px -1px 0 #fff, 2px 2px 0 #333;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
