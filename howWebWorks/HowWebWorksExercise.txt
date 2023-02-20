@@ -1,0 +1,11 @@
+1. HTTP stands for Hypertext Transfer Protocol. It is the set of rules that allows web browsers and servers to communicate with each other and transfer data across the internet.
+2. URL stands for Uniform Resource Locator. It is a string of characters that provides a way to locate and access a resource, such as a website, on the internet.
+3. DNS stands for Domain Name System. It is a system that translates human-readable domain names (like google.com) into machine-readable IP addresses (like 172.217.6.78) that computers use to identify and communicate with each other on the internet. It's like the internet's phonebook.
+4. A query string is like a set of instructions that a website can use to understand what you are looking for.
+5. The difference between GET and POST is that GET requests are used to retrieve information from a server, while POST requests are used to submit information to a server. 
+6. An HTTP request is like a letter that your web browser sends to a website's server asking for information.
+7. An HTTP response is like a letter that a website's server sends back to your web browser after it receives your request.
+8. An HTTP header is like a set of instructions or extra information that is included with an HTTP request or response.
+- Request headers: Host, User-Agent, Accept, Cookie, Cache-Control
+- Response headers: Content-Type, Last-Modified, Set-Cookie, Cache-Control
+9. It triggers a sequence of steps that involve resolving the domain name, establishing a connection with the server, requesting a specific file, receiving a response from the server containing that file, and finally displaying the file in the browser window for the user to see.
