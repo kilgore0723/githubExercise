@@ -1,0 +1,19 @@
+#addstory-button {
+    margin-left: 65px;
+}
+
+.addstory-form {
+    width: 300px;
+}
+
+/* .hidden {
+    display: none;
+} */
+
+.main-nav-links {
+    display: block;
+}
+
+.nav-link {
+    font-size: 11px;
+}
